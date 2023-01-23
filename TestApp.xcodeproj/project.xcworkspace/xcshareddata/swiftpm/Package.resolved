@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "braintree-ios-drop-in",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/braintree/braintree-ios-drop-in",
+      "state" : {
+        "revision" : "81236a6c612f9b1ff04da6c12bc1869a859fe6fb",
+        "version" : "9.8.0"
+      }
+    },
+    {
+      "identity" : "braintree_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/braintree/braintree_ios",
+      "state" : {
+        "revision" : "d190215f9b219ab5da899b1405ef3b2c8461b983",
+        "version" : "5.19.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -13,6 +13,7 @@
 		BE12F60C28D8E0DA002FF69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE12F60A28D8E0DA002FF69A /* Main.storyboard */; };
 		BE12F60E28D8E0DB002FF69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE12F60D28D8E0DB002FF69A /* Assets.xcassets */; };
 		BE12F61128D8E0DB002FF69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE12F60F28D8E0DB002FF69A /* LaunchScreen.storyboard */; };
+		BE2E810B297EE33A001A451F /* BraintreeDropIn in Frameworks */ = {isa = PBXBuildFile; productRef = BE2E810A297EE33A001A451F /* BraintreeDropIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2E810B297EE33A001A451F /* BraintreeDropIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+				BE2E810A297EE33A001A451F /* BraintreeDropIn */,
+			);
 			productName = TestApp;
 			productReference = BE12F60128D8E0DA002FF69A /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BE12F5F828D8E0DA002FF69A;
+			packageReferences = (
+				BE2E8109297EE33A001A451F /* XCRemoteSwiftPackageReference "braintree-ios-drop-in" */,
+			);
 			productRefGroup = BE12F60228D8E0DA002FF69A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A82D4LURDA;
+				DEVELOPMENT_TEAM = 43253H4X22;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A82D4LURDA;
+				DEVELOPMENT_TEAM = 43253H4X22;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE2E8109297EE33A001A451F /* XCRemoteSwiftPackageReference "braintree-ios-drop-in" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/braintree/braintree-ios-drop-in";
+			requirement = {
+				kind = exactVersion;
+				version = 9.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE2E810A297EE33A001A451F /* BraintreeDropIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE2E8109297EE33A001A451F /* XCRemoteSwiftPackageReference "braintree-ios-drop-in" */;
+			productName = BraintreeDropIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE12F5F928D8E0DA002FF69A /* Project object */;
 }

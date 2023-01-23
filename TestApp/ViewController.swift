@@ -1,11 +1,5 @@
-//
-//  ViewController.swift
-//  TestApp
-//
-//  Created by Jax DesMarais-Leder on 9/19/22.
-//
-
 import UIKit
+import BraintreeDropIn
 
 class ViewController: UIViewController {
 
@@ -13,7 +7,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-
